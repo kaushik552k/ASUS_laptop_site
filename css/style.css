@@ -1,0 +1,180 @@
+/* CSS Reset */
+*{
+    margin: 0px ;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+}
+button{
+    font-family: 'Poppins', sans-serif;
+
+}
+/* Header */
+
+header{
+    display: flex;
+    width: 90%;
+    height: 10vh;
+    margin: auto;
+    align-items: center;
+}
+.logo-container img{
+    height: 100px;
+    margin: 7px 0px 0px 0px;
+
+}
+.logo-container ,.nav-links,.cart{
+    display: flex;
+}
+
+.logo-container{
+    flex: 1;
+}
+.logo{
+    font-weight: 400;
+    margin: 5px;
+}
+nav{
+    flex: 2;
+}
+.nav-links{
+    justify-content: space-around;
+    list-style: none;
+
+}
+.nav-link{
+    padding: 0px 70px;
+    text-decoration: none;
+    color: #5f5f79;
+    font-size: 18px;
+}
+.nav-link:hover{
+    
+    color: white;
+    background-color: black;
+    border-radius: 10px;
+}
+
+.cart{
+    flex: 1;
+    justify-content: flex-end;
+}
+
+
+/* main body */
+
+.presentation{
+    display: flex;
+    width: 90%;
+    margin: auto;
+    min-height: 80vh;
+    align-items: center;
+}
+.introduction{
+    flex: 1;
+}
+.intro-text h1{
+    font-size: 44px;
+    font-weight: 500;
+    background: linear-gradient(to right,#494964,#6f6f89);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.cta{
+    padding: 50px 0px 0px 0px;
+}
+.cta-select{
+    border: 2px solid #c36cbb;
+    background: transparent;
+    color: #c36cbb;
+    width: 150px;
+    height: 50px;
+    cursor: pointer;
+    font-size: 16px;
+}
+.cta-add{
+    border: 2px solid #c36cbb;
+    background: #c36cbb;
+    color: white;
+    width: 150px;
+    height: 50px;
+    cursor: pointer;
+    font-size: 16px;
+    margin: 30px 0px 0px 30px;
+}
+.intro-text p{
+    margin: 5px;
+    font-size: 22px;
+    color: #585772;
+}
+.cover{
+    flex: 1;
+    display: flex;
+    height: 60vh;
+
+}
+.cover img{
+    height: 100%;
+    filter: drop-shadow(0px 10px 3px);
+    animation: drop 1.5s ease ;
+}
+
+.laptop-select{
+    width: 15%;
+    display: flex;
+    justify-content: space-around;
+    position: absolute;
+    right: 27%;
+    top: 83%;
+}
+
+@keyframes drop{
+    0%{
+        opacity: 0;
+        transform: translateY(-80px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+/* background circles */
+
+.big-circle{
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -1;
+    opacity: 0.7;
+    height: 80%;
+}
+.medium-circle{
+    position: absolute;
+    top: 30%;
+    right: 30%;
+    z-index: -1;
+    opacity: 0.7;
+    height: 60%;
+}
+.small-circle{
+    position: absolute;
+    bottom: 0%;
+    left: 20%;
+    opacity: 0.7;
+    z-index: -1;
+}
+
+/* png image */
+.png{
+    margin: 10px 10px;
+    height: 10%;
+}
+.png img{
+   
+    padding: 10px 10px;
+    height: 50%;
+    width: 50%;
+}
